@@ -1,0 +1,71 @@
+{
+  "mode": "yolo",
+  "granularity": "standard",
+  "parallelization": true,
+  "commit_docs": true,
+  "model_profile": "balanced",
+  "workflow": {
+    "research": true,
+    "plan_check": true,
+    "verifier": true,
+    "nyquist_validation": true,
+    "auto_advance": true
+  },
+  "project": {
+    "name": "Malaysia BOS Documentation",
+    "version": "1.0",
+    "phases": 7,
+    "artifacts": 46,
+    "skills": 21
+  },
+  "wave_structure": {
+    "wave_1": {
+      "name": "Master",
+      "sections": ["00_MASTER.md"],
+      "files": 1,
+      "action": "skip"
+    },
+    "wave_2": {
+      "name": "Business",
+      "sections": ["01_business/"],
+      "files": 5,
+      "dependencies": ["wave_1"]
+    },
+    "wave_3a": {
+      "name": "Data Architecture",
+      "sections": ["03_data/"],
+      "files": 5,
+      "dependencies": ["wave_2"]
+    },
+    "wave_3b": {
+      "name": "Governance",
+      "sections": ["05_governance/"],
+      "files": 4,
+      "dependencies": ["wave_2"]
+    },
+    "wave_4": {
+      "name": "System Design",
+      "sections": ["02_system/"],
+      "files": 6,
+      "dependencies": ["wave_3a", "wave_3b"]
+    },
+    "wave_5": {
+      "name": "Development",
+      "sections": ["04_dev/"],
+      "files": 6,
+      "dependencies": ["wave_4"]
+    },
+    "wave_6": {
+      "name": "Phases",
+      "sections": ["06_phases/"],
+      "files": 13,
+      "dependencies": ["wave_5"]
+    },
+    "wave_7": {
+      "name": "Skills",
+      "sections": ["07_skills/"],
+      "files": 21,
+      "dependencies": ["wave_6"]
+    }
+  }
+}
