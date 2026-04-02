@@ -108,7 +108,7 @@
 
 ---
 
-## 말레이시아 JVC 모델
+## 말레이시아 JVC 모델                                                                                               
 
 Malaysia 통행료 징수는 **JVC(Joint Venture Company) 기반 거버넌스**로 운영되며, 각 도로별로 별도의 JVC가 사업권을 보유한다.
 
