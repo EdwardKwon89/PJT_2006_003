@@ -1,8 +1,8 @@
 # State: Malaysia BOS Documentation
 
-**Updated:** 2026-04-01
-**Phase:** 0 (Initialization Complete)
-**Progress:** 100% (PROJECT.md + CONFIG + REQUIREMENTS + ROADMAP created)
+**Updated:** 2026-04-02
+**Phase:** 3 (Wave 4 — System Design Complete)
+**Progress:** Wave 1~4 완료 (20/46 files)
 
 ---
 
@@ -25,12 +25,28 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 - [x] **REQUIREMENTS.md** — 67개 요구사항 (46 files + 21 skills) 정의
 - [x] **ROADMAP.md** — 7 Wave × 12 Phase 실행 계획 수립
 - [x] **.planning/ 디렉토리** — Git 추적 활성화
+- [x] **Wave 2 (Phase 1)** — 01_business/ 5개 파일 생성 완료 (2,983줄)
+  - 01_project_charter.md (434줄)
+  - 02_market_malaysia.md (634줄)
+  - 03_domain_tolling.md (693줄)
+  - 04_organization_roles.md (528줄)
+  - 05_payment_architecture.md (694줄)
+- [x] **PROGRESS.md** — 상태 추적 파일 생성 (담당자 인수인계용)
 
 ### ⏳ Pending
 
-- [ ] **Wave 2 실행** — 01_business/ 5개 파일 병렬 생성
-- [ ] **Wave 3A/3B 실행** — 03_data/ + 05_governance/ 9개 파일 병렬 생성
-- [ ] **Wave 4~7 실행** — 나머지 33개 파일 + 21개 Skills 생성
+- [ ] **Wave 3A (Phase 2)** — 03_data/ 4개 파일 병렬 생성 (1/5 진행: 05_security_compliance.md 완료)
+  - 01_data_architecture.md (대기)
+  - 02_data_model.md (대기)
+  - 03_rbac_design.md (대기)
+  - 04_metadata_glossary.md (대기)
+  - ✅ 05_security_compliance.md (완료 — 554줄)
+- [ ] **Wave 3B (Phase 2)** — 05_governance/ 4개 파일 병렬 생성 (0/4)
+  - 01_decision_gates.md (대기)
+  - 02_board_decisions.md (대기)
+  - 03_reporting_cycle.md (대기)
+  - 04_supplement_items.md (대기)
+- [ ] **Wave 4~7 실행** — 나머지 37개 파일 생성
 - [ ] **최종 검증** — 46개 파일 + 21개 Skills 완성도 검증
 - [ ] **v1.0 배포** — 전체 67개 문서 확정 및 태깅
 
