@@ -252,7 +252,7 @@ AI 기능 설계 및 빅데이터 분석.
 | [03_agent_roles.md](./03_agent_roles.md) | 각 Agent의 주요 Skills 목록 |
 | [02_paperclip_org.md](./02_paperclip_org.md) | Agent × Skills 매핑 |
 | [../07_skills/](../07_skills/) | Skills 파일 실제 위치 |
-| [../.planning/ROADMAP.md](../.planning/ROADMAP.md) | Phase 6 Skills 생성 계획 |
+| [ROADMAP.md](../../.planning/ROADMAP.md) | Phase 6 Skills 생성 계획 |
 | [../03_data/04_metadata_glossary.md](../03_data/04_metadata_glossary.md) | 용어 표준 (Skills 작성 기준) |
 
 ---

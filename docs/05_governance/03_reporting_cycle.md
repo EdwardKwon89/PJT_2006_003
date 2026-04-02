@@ -566,9 +566,9 @@
 ## 9. 부록 (Appendix)
 
 ### 9.1 관련 문서
-- [Project Charter](./01_project_charter.md) — 프로젝트 목표 및 범위
-- [Organization & Roles](./04_organization_roles.md) — 조직 구조 및 역할
-- [Risk Register](./02_governance_framework.md) — 상세 위험 현황
+- [Project Charter](../01_business/01_project_charter.md) — 프로젝트 목표 및 범위
+- [Organization & Roles](../01_business/04_organization_roles.md) — 조직 구조 및 역할
+- [Decision Gates](./01_decision_gates.md) — G-HARD 게이트 및 의사결정 현황
 
 ### 9.2 유용한 링크
 - **대시보드**: https://dashboard.internal/paperclip

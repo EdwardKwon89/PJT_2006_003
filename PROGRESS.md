@@ -1,8 +1,8 @@
 # Malaysia BOS Documentation — 진행 상황 보고서
 
-**마지막 업데이트:** 2026-04-02  
+**마지막 업데이트:** 2026-04-03  
 **작성자:** Claude Code  
-**상태:** Phase 2 진행 중 (Wave 3A+3B)
+**상태:** Phase 2 완료 → Phase 3 (Wave 6 나머지 + Wave 7) 준비 중
 
 ---
 
@@ -10,16 +10,16 @@
 
 ```
 Wave 1: Master (건너뜀) ................................ ✅ 건너뜀
-Wave 2: 01_business/ (5개) ............................ ✅ 100% (완료)
-Wave 3A: 03_data/ (5개) ............................... ⏳ 20% (1/5 완료)
-Wave 3B: 05_governance/ (4개) ......................... ⏳ 0% (0/4 완료)
-Wave 4: 02_system/ (6개) .............................. ⏳ 0% (대기)
-Wave 5: 04_dev/ (6개) ................................. ⏳ 0% (대기)
-Wave 6: 06_phases/ (13개) ............................. ⏳ 0% (대기)
+Wave 2: 01_business/ (5개) ............................ ✅ 100% (5/5 완료)
+Wave 3A: 03_data/ (5개) ............................... ✅ 100% (5/5 완료)
+Wave 3B: 05_governance/ (4개) ......................... ✅ 100% (4/4 완료)
+Wave 4: 02_system/ (6개) .............................. ✅ 100% (6/6 완료)
+Wave 5: 04_dev/ (6개) ................................. ✅ 100% (6/6 완료)
+Wave 6: 06_phases/ (13개) ............................. 🟡 62% (8/13 완료)
 Wave 7: 07_skills/ (21개) ............................. ⏳ 0% (대기)
 
 ────────────────────────────────────────────────────
-총 진행률: 5/67 (7.5%) — Phase 2 진행 중
+총 진행률: 34/67 (50.7%) — Wave 6 완료 + Wave 7 실행 필요
 ```
 
 ---
@@ -28,255 +28,157 @@ Wave 7: 07_skills/ (21개) ............................. ⏳ 0% (대기)
 
 ### Phase 1 (Wave 2) — 01_business/ ✅ 완료
 
-| # | 파일명 | 담당 Agent | 줄 수 | 상태 |
-|---|--------|-----------|-------|------|
-| 1 | 01_project_charter.md | CEO | 434 | ✅ |
-| 2 | 02_market_malaysia.md | CIO | 634 | ✅ |
-| 3 | 03_domain_tolling.md | Domain Expert | 693 | ✅ |
-| 4 | 04_organization_roles.md | PM | 528 | ✅ |
-| 5 | 05_payment_architecture.md | Billing Lead | 694 | ✅ |
-| | **합계** | | **2,983줄** | **✅** |
+| # | 파일명 | 줄 수 | 상태 |
+|---|--------|-------|------|
+| 1 | 01_project_charter.md | 434 | ✅ |
+| 2 | 02_market_malaysia.md | 634 | ✅ |
+| 3 | 03_domain_tolling.md | 693 | ✅ |
+| 4 | 04_organization_roles.md | 528 | ✅ |
+| 5 | 05_payment_architecture.md | 694 | ✅ |
+| | **합계** | **2,983줄** | **✅** |
 
-**Git Commit:** `c9ff9ee docs(wave2): generate 5 business domain files (46 KB, 2983 lines)`
+### Phase 2 (Wave 3A + 3B) — 데이터 & 거버넌스 ✅ 완료
 
-**내용 요약:**
-- 프로젝트 목적 & JVC 사업 모델
-- 말레이시아 시장 분석 & 경쟁사
-- SLFF/MLFF Tolling 도메인
-- 조직 구조 & 29개 Agent 조직도
-- Channel A/B 결제 구조
+#### Wave 3A — 03_data/ ✅
 
----
+| # | 파일명 | 줄 수 | 상태 |
+|---|--------|-------|------|
+| 1 | 01_data_architecture.md | 487 | ✅ |
+| 2 | 02_data_model.md | 652 | ✅ |
+| 3 | 03_rbac_design.md | 646 | ✅ |
+| 4 | 04_metadata_glossary.md | 519 | ✅ |
+| 5 | 05_security_compliance.md | 554 | ✅ |
+| | **합계** | **2,858줄** | **✅** |
 
-## ⏳ 진행 중 (현재)
+#### Wave 3B — 05_governance/ ✅
 
-### Phase 2 (Wave 3A + 3B) — 데이터 & 거버넌스
+| # | 파일명 | 줄 수 | 상태 |
+|---|--------|-------|------|
+| 1 | 01_decision_gates.md | 536 | ✅ |
+| 2 | 02_board_decisions.md | 467 | ✅ |
+| 3 | 03_reporting_cycle.md | 593 | ✅ |
+| 4 | 04_supplement_items.md | 574 | ✅ |
+| | **합계** | **2,169줄** | **✅** |
 
-#### Wave 3A — 03_data/ (5개 파일)
+**Phase 2 검증 (2026-04-03):**
+- ✅ 비-Wave7 링크 전체 유효 확인
+- ✅ 3개 broken link 수정 (03_reporting_cycle.md, 04_skills_index.md)
 
-| # | 파일명 | 담당 Agent | 예상 줄 수 | 상태 |
-|---|--------|-----------|-----------|------|
-| 1 | 01_data_architecture.md | DA Lead | 400~500 | ⏳ 대기 |
-| 2 | 02_data_model.md | DBA | 450~550 | ⏳ 대기 |
-| 3 | 03_rbac_design.md | Security Lead | 400~500 | ⏳ 대기 |
-| 4 | 04_metadata_glossary.md | Data Steward | 400~500 | ⏳ 대기 |
-| 5 | 05_security_compliance.md | Compliance | 554 | ✅ 완료 |
+### Phase 3 (Wave 4) — 02_system/ ✅ 완료
 
-**상태:** 1/5 완료 (20%)
+| # | 파일명 | 상태 |
+|---|--------|------|
+| 1 | 01_system_overview.md | ✅ |
+| 2 | 02_service_domains.md | ✅ |
+| 3 | 03_tech_stack.md | ✅ |
+| 4 | 04_ai_features.md | ✅ |
+| 5 | 05_external_integration.md | ✅ |
+| 6 | 06_api_mcp_spec.md | ✅ |
 
-**05_security_compliance.md 완료 내용:**
-- PDPA 준수 체계
-- ANPR 이미지 보존/삭제 정책 (7일~7년)
-- 개인정보 마스킹 기준
-- Blockchain 감사 로그 (SHA-256)
-- 보안 인증 로드맵 (ISO 27001, PCI-DSS, ISMS-P)
-- 554줄 생성
+### Phase 4 (Wave 5) — 04_dev/ ✅ 완료
 
-#### Wave 3B — 05_governance/ (4개 파일)
+| # | 파일명 | 상태 |
+|---|--------|------|
+| 1 | 01_toolchain.md | ✅ |
+| 2 | 02_paperclip_org.md | ✅ |
+| 3 | 03_agent_roles.md | ✅ |
+| 4 | 04_skills_index.md | ✅ |
+| 5 | 05_gsd_workflow.md | ✅ |
+| 6 | 06_budget_model.md | ✅ |
 
-| # | 파일명 | 담당 Agent | 예상 줄 수 | 상태 |
-|---|--------|-----------|-----------|------|
-| 1 | 01_decision_gates.md | CEO | 350~450 | ⏳ 대기 |
-| 2 | 02_board_decisions.md | PM | 400~500 | ⏳ 대기 |
-| 3 | 03_reporting_cycle.md | PM | 350~450 | ⏳ 대기 |
-| 4 | 04_supplement_items.md | Compliance | 400~500 | ⏳ 대기 |
+### Phase 5 (Wave 6) — 06_phases/ 🟡 62% 완료
 
-**상태:** 0/4 완료 (0%)
-
----
-
-## 📋 다음 단계
-
-### 즉시 (Agent Rate Limit 해제 후)
-
-**1. Wave 3A 완료** — 03_data/ 4개 파일 생성
-
-```bash
-# 파일 생성 주의사항:
-# - 각 파일 상단에 Agent 사용 지침 포함
-# - 기초 문서(00_MASTER.md, 01_project_charter.md, 04_supplement_items.md) 참고
-# - 파일 간 교차 참조 링크 포함
-# - Self-contained 형태 (이 파일만 읽어도 이해 가능)
-```
-
-**파일별 생성 지침:**
-
-**01_data_architecture.md (400~500줄)**
-- DA 역할과 책임 정의
-- 5단계 계층 데이터 참조 구조 (Line → Plaza → Center → Clearing → TOC)
-- ERD 설계 방향 & 다이어그램
-- 메타데이터 관리 전략
-- 멀티테넌시 고려사항
-
-**02_data_model.md (450~550줄)**
-- 핵심 테이블 50+ 목록
-- 주요 테이블 DDL (스키마 정의)
-- Channel A/B 트랜잭션 구조도
-- 집계 테이블 (AGG_*) 정의
-- 코드 값 표준
-
-**03_rbac_design.md (400~500줄)**
-- 30개 역할 목록
-- 역할별 데이터 접근 권한 (CRUD)
-- PostgreSQL RLS 정책 예시
-- 기능 권한 매트릭스
-- API 레벨 필터
-
-**04_metadata_glossary.md (400~500줄)**
-- KO/EN/BM 3언어 용어 사전 (300+ 용어)
-- 코드 값 표준 (결제 상태, 위반 코드 등)
-- 데이터 품질 검증 규칙
-- 데이터 정의서 (data dictionary)
-
-**2. Wave 3B 완료** — 05_governance/ 4개 파일 생성
-
-```bash
-# 기초: 04_supplement_items.md 활용
-# 04_supplement_items.md는 이미 제공된 기초 문서이므로 참고하면서 구성
-```
-
-**파일별 생성 지침:**
-
-**01_decision_gates.md (350~450줄)**
-- G-HARD 0~7 게이트 (8개 게이트)
-- 각 게이트별 의사결정 항목
-- 책임 담당자 & 산출물
-- 일정 & 체크리스트
-
-**02_board_decisions.md (400~500줄)**
-- 21개 Board 결정사항 전체 목록 (04_supplement_items.md 참고)
-- 각 결정의 배경, 대안, 선택 이유
-- 실행 상태 추적 (Status: Pending/In Progress/Complete)
-- 리스크 & 완화책
-
-**03_reporting_cycle.md (350~450줄)**
-- 일일/주간/격주/Phase 보고 체계
-- CEO 주간 보고서 템플릿
-- Paperclip Heartbeat 스케줄 (Daily 9:00 AM)
-- KPI 모니터링 대시보드 정의
-
-**04_supplement_items.md (기초 활용)**
-- 04_supplement_items.md (기초 문서)를 활용
-- docs/05_governance/04_supplement_items.md로 복사 또는 정제
-- 18개 보충항목 전체 포함
-
-**3. Phase 2 검증 & commit**
-
-```bash
-# 검증 항목:
-# ✓ Wave 3A 4개 파일 생성 확인
-# ✓ Wave 3B 4개 파일 생성 확인
-# ✓ 파일 간 교차 참조 링크 작동 확인
-# ✓ 용어 일관성 (metadata glossary와 정렬)
-
-# Git commit:
-git add docs/03_data/ docs/05_governance/
-git commit -m "docs(wave3): generate 9 governance & data architecture files (54 KB, ~4000 lines)"
-```
-
-### 이후 단계
-
-| Phase | Wave | 파일 수 | 상태 | 예상 시기 |
-|-------|------|--------|------|----------|
-| 3 | 4 (02_system/) | 6 | ⏳ 대기 | Phase 2 완료 후 |
-| 4 | 5 (04_dev/) | 6 | ⏳ 대기 | Phase 3 완료 후 |
-| 5 | 6 (06_phases/) | 13 | ⏳ 대기 | Phase 4 완료 후 |
-| 6 | 7 (07_skills/) | 21 | ⏳ 대기 | Phase 5 완료 후 |
+| # | 파일명 | 상태 |
+|---|--------|------|
+| 0 | 00_phase_overview.md | ✅ |
+| 1 | 01_phase01_infra.md | ✅ |
+| 2 | 02_phase02_comm.md | ✅ |
+| 3 | 03_phase03_txn.md | ✅ |
+| 4 | 04_phase04_account.md | ✅ |
+| 5 | 05_phase05_billing.md | ✅ |
+| 6 | **06_phase06_violation.md** | ⏳ 대기 |
+| 7 | **07_phase07_monitoring.md** | ⏳ 대기 |
+| 8 | 08_phase08_bigdata.md | ✅ |
+| 9 | 09_phase09_ai.md | ✅ |
+| 10 | **10_phase10_analytics.md** | ⏳ 대기 |
+| 11 | **11_phase11_compliance.md** | ⏳ 대기 |
+| 12 | **12_phase12_handover.md** | ⏳ 대기 |
 
 ---
 
-## 🛠️ 기술 정보
+## ⏳ 다음 단계
 
-### 워크플로우 설정 (.planning/config.json)
+### 즉시 — Wave 6 나머지 5개 파일 생성
 
-```json
-{
-  "mode": "yolo",
-  "granularity": "standard",
-  "parallelization": true,
-  "commit_docs": true,
-  "model_profile": "balanced",
-  "workflow": {
-    "research": true,
-    "plan_check": true,
-    "verifier": true,
-    "nyquist_validation": true,
-    "auto_advance": true
-  }
-}
+**누락된 Phase 파일:**
+
+**06_phase06_violation.md (350~450줄)**
+- Phase 6: 위반 처리 (Violation Processing)
+- 미납/위반 Tier 1~4 처리 흐름
+- JPJ 연동 도로세 차단 프로세스
+- Write-off 기준 및 절차
+
+**07_phase07_monitoring.md (350~450줄)**
+- Phase 7: 모니터링 & 장애 대응
+- AI 장애 탐지 (Prometheus + Claude)
+- 실시간 대시보드 구성
+- 온콜 대응 절차
+
+**10_phase10_analytics.md (350~450줄)**
+- Phase 10: 분석 & 리포팅 플랫폼
+- BI 대시보드 구현
+- Text-to-SQL 엔진 배포
+- KPI 자동화 리포트
+
+**11_phase11_compliance.md (350~450줄)**
+- Phase 11: 컴플라이언스 & 외부 감사
+- PDPA, PCI-DSS 준수 점검
+- 외부 API 공개 (TOC용)
+- 보안 인증 취득
+
+**12_phase12_handover.md (350~450줄)**
+- Phase 12: 인수인계 & 운영 이관
+- 문서 최종 확정
+- 운영팀 교육
+- 시스템 핸드오버
+
+### 그 다음 — Wave 7 (21개 Skills)
+
+**실행 명령:**
+```bash
+/gsd:plan-phase 6
+/gsd:execute-phase 6 --wave 7
 ```
 
-### 기초 문서 (확정 — 참고용)
-
-- ✅ **00_MASTER.md** — 전체 마스터 구조, 10개 핵심 도메인
-- ✅ **01_project_charter.md** — 프로젝트 목적, JVC 사업 모델
-- ✅ **04_supplement_items.md** — 18개 보충항목, G-HARD 게이트
-- ✅ **multi-agent-doc-gen.md** — Wave별 실행 전략
-
-### 의존성 관계
-
-```
-Wave 1 (Master) ✅
-  ↓
-Wave 2 (01_business/) ✅ 완료
-  ↓
-Wave 3A (03_data/) + Wave 3B (05_governance/) ⏳ 진행 중
-  ├─ Wave 3A는 Phase 1 (01_business) 기반 필요
-  └─ Wave 3B는 01_project_charter.md, 04_supplement_items.md 기반 필요
-  ↓
-Wave 4 (02_system/) — Wave 3A/3B 완료 필요
-  ↓
-Wave 5 (04_dev/) — Wave 4 완료 필요
-  ↓
-Wave 6 (06_phases/) — Wave 5 완료 필요
-  ↓
-Wave 7 (07_skills/) — Wave 6 완료 필요
-```
+**21개 Skills 목록 (04_skills_index.md 참조)**
 
 ---
 
 ## 📁 파일 구조
 
 ```
-c:\WorkSpaces\PJT_2026_002/
+PJT_2006_003/
 ├── .planning/
-│   ├── PROJECT.md (프로젝트 비전 & 요구사항)
-│   ├── REQUIREMENTS.md (67개 요구사항 정의)
-│   ├── ROADMAP.md (7 Wave 로드맵)
-│   ├── STATE.md (진행 상황)
-│   └── config.json (워크플로우 설정)
+│   ├── PROJECT.md ✅
+│   ├── REQUIREMENTS.md ✅
+│   ├── ROADMAP.md ✅
+│   ├── STATE.md ✅ (업데이트됨)
+│   ├── config.json ✅
+│   └── phases/
+│       └── 2/ ✅ (PLAN.md 생성됨)
 │
 ├── docs/
-│   ├── 01_business/ ✅ (5개 완료 — 2,983줄)
-│   │   ├── 01_project_charter.md ✅
-│   │   ├── 02_market_malaysia.md ✅
-│   │   ├── 03_domain_tolling.md ✅
-│   │   ├── 04_organization_roles.md ✅
-│   │   └── 05_payment_architecture.md ✅
-│   │
-│   ├── 02_system/ ⏳ (Wave 4 — 대기)
-│   │
-│   ├── 03_data/ ⏳ (Wave 3A — 1/5 완료)
-│   │   └── 05_security_compliance.md ✅ (554줄)
-│   │   └── 01_data_architecture.md ⏳ (대기)
-│   │   └── 02_data_model.md ⏳ (대기)
-│   │   └── 03_rbac_design.md ⏳ (대기)
-│   │   └── 04_metadata_glossary.md ⏳ (대기)
-│   │
-│   ├── 04_dev/ ⏳ (Wave 5 — 대기)
-│   │
-│   ├── 05_governance/ ⏳ (Wave 3B — 0/4 완료)
-│   │   └── 01_decision_gates.md ⏳ (대기)
-│   │   └── 02_board_decisions.md ⏳ (대기)
-│   │   └── 03_reporting_cycle.md ⏳ (대기)
-│   │   └── 04_supplement_items.md ⏳ (대기)
-│   │
-│   ├── 06_phases/ ⏳ (Wave 6 — 대기)
-│   │
-│   └── 07_skills/ ⏳ (Wave 7 — 대기)
+│   ├── 01_business/ ✅ (5/5)
+│   ├── 02_system/ ✅ (6/6)
+│   ├── 03_data/ ✅ (5/5)
+│   ├── 04_dev/ ✅ (6/6)
+│   ├── 05_governance/ ✅ (4/4)
+│   ├── 06_phases/ 🟡 (8/13)
+│   └── 07_skills/ ⏳ (미생성 — Wave 7)
 │
-├── PROGRESS.md (이 파일 — 진행 상황)
-└── README.md (필요시)
+├── PROGRESS.md (이 파일)
+└── scripts/
+    └── generate_docs.py
 ```
 
 ---
@@ -291,51 +193,15 @@ c:\WorkSpaces\PJT_2026_002/
 | `68e4172` | docs: create roadmap | ✅ |
 | `7b2cd1f` | chore: initialize STATE.md | ✅ |
 | `c9ff9ee` | docs(wave2): generate 5 business domain files | ✅ |
-| **다음** | **docs(wave3): generate 9 governance & data files** | ⏳ |
+| **다음** | **docs(phase2): verify & fix links in waves 3A/3B** | ⏳ |
 
 ---
 
 ## 💡 주의사항 & 팁
 
-### 파일 생성 시 주의사항
+1. **Wave 7 링크** — `07_skills/` 파일들이 아직 없어 23개 forward ref가 dead link (Wave 7 생성 후 자동 해결)
+2. **Self-contained 형태** — 각 파일이 독립적으로 이해 가능해야 함
+3. **교차 참조** — 상대 경로 사용 규칙: `../01_business/` 등 folume 간 이동 시 상위 폴더 명시
 
-1. **Self-contained 형태**
-   - 각 파일이 독립적으로 이해 가능해야 함
-   - 기초 문서(00_MASTER, 01_project_charter 등) 참고하지만 완전히 의존하지 않음
-
-2. **교차 참조 링크**
-   - 다른 파일 참고 시 명확한 링크 포함
-   - 상대 경로 사용: `[01_project_charter.md](../01_business/01_project_charter.md)`
-
-3. **용어 일관성**
-   - 04_metadata_glossary.md의 용어 정의 활용
-   - 기술 용어, 약자 통일 (예: SLFF, MLFF, RLS, RBAC 등)
-
-4. **Markdown 포맷**
-   - GitHub Flavored Markdown 준수
-   - TOC (Table of Contents) 포함 권장
-   - 테이블, 코드블록, 다이어그램 활용
-
-### 담당자 인수인계 팁
-
-- 이 파일(PROGRESS.md)을 먼저 읽기
-- .planning/STATE.md에서 전체 컨텍스트 확인
-- .planning/ROADMAP.md에서 전체 로드맵 참고
-- 기초 문서 3개(00_MASTER, 01_project_charter, 04_supplement_items)를 항상 곁에 두기
-- 각 Wave의 의존성 관계 확인
-
----
-
-## 📞 문의사항
-
-- **프로젝트 구조:** .planning/PROJECT.md
-- **상세 요구사항:** .planning/REQUIREMENTS.md
-- **전체 로드맵:** .planning/ROADMAP.md
-- **프로젝트 상태:** .planning/STATE.md
-- **진행 상황:** 이 파일 (PROGRESS.md)
-
----
-
-**마지막 업데이트:** 2026-04-02  
-**다음 재개:** Wave 3A/3B (03_data/ + 05_governance/) 계속 진행  
-**예상 소요시간:** Phase 2 완료까지 2~3시간 추가 예정
+**마지막 업데이트:** 2026-04-03  
+**다음 재개:** Wave 6 나머지 5개 파일 + Wave 7 (21 Skills)
