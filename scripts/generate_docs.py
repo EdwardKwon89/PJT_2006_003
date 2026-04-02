@@ -46,10 +46,14 @@ from anthropic import (
 MODEL_SONNET = "claude-sonnet-4-6"
 MODEL_HAIKU  = "claude-haiku-4-5-20251001"
 
-# 출력 예상 줄 수 기준 — 이 이상이면 Sonnet 사용
+# 구독형 플랜: 모든 Phase에 Sonnet 사용 (품질 우선)
+# API 종량제 사용 시 --force-model haiku 옵션으로 비용 절감 가능
+DEFAULT_MODEL = MODEL_SONNET
+
+# 출력 예상 줄 수 기준 (API 종량제 시 라우팅 기준, 구독형에서는 무시)
 SONNET_LINE_THRESHOLD = 400
 
-# 가격 ($/1M tokens, 2025-2026)
+# 가격 ($/1M tokens, 2025-2026) — API 종량제 사용 시 참고
 PRICING = {
     MODEL_HAIKU:  {"input": 0.80,  "output": 4.00},
     MODEL_SONNET: {"input": 3.00,  "output": 15.00},
@@ -146,10 +150,11 @@ def calc_cost(model: str, usage) -> float:
 def select_model(task: DocTask, force_model: str | None = None) -> str:
     if force_model:
         return force_model
-    # Skills 파일 (Phase 6) 또는 예상 줄 수가 적으면 Haiku
-    if task.phase == 6 or task.expected_lines < SONNET_LINE_THRESHOLD:
-        return MODEL_HAIKU
-    return MODEL_SONNET
+    # 구독형: 항상 Sonnet (품질 우선)
+    # API 종량제로 전환 시 아래 주석을 해제하면 Haiku 라우팅 활성화:
+    # if task.phase == 6 or task.expected_lines < SONNET_LINE_THRESHOLD:
+    #     return MODEL_HAIKU
+    return DEFAULT_MODEL
 
 
 # ---------------------------------------------------------------------------
